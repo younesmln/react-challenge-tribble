@@ -1,0 +1,16 @@
+@keyframes circleAnim {
+    0%   {top: 0;}
+    40%  {top: calc(100vh + 50px);}
+    100% {top: 0;}
+}
+
+.circle {
+    position: relative;
+    animation: 25.5s circleAnim infinite;
+    padding-right: 15px;
+}
+
+.wrapper > *:last-child {
+    padding-right: 0;
+}
+
