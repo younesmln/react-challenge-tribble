@@ -5,7 +5,7 @@ function Circles({ circlesCount, color }) {
   return (
     <div id="shapes-container">
       {
-        new Array(circlesCount).fill(undefined).map((item, index) =>
+        Array.apply(null, { length: circlesCount }).map((item, index) =>
           <Circle key={index} color={color}/>
         )
       }

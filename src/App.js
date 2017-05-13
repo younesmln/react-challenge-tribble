@@ -30,7 +30,7 @@ export default class App extends Component {
     const { circlesCount, color } = this.state;
     return (
       <div>
-        <h1>Hello, there is currently { circlesCount } shape </h1>
+        <h1>Hello, there is currently { circlesCount } shape{ circlesCount ? 's' : ''}  </h1>
         <button onClick={this.addShape}>add Shape!</button>
         <input onChange={this.colorChanged} />
         <Circles circlesCount={circlesCount} color={color} />

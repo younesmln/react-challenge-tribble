@@ -6,11 +6,11 @@
 
 .circle {
     position: relative;
-    animation: 25.5s circleAnim infinite;
+    animation: 2s circleAnim infinite;
     padding-right: 15px;
 }
 
-.wrapper > *:last-child {
+#shapes-container > *:last-child {
     padding-right: 0;
 }
 
